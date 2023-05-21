@@ -15,4 +15,8 @@ public class Cat : ICat
     public string MeowScrambled() {
         return soundScrambler.Scramble("meow");
     }
+
+    public string MeowScrambled(CatStats stats) {
+        return soundScrambler.Scramble(stats);
+    }
 }
