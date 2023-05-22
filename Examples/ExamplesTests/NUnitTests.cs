@@ -44,4 +44,12 @@ public class NUnitTests
 
         Assert.That(result, Is.EqualTo(expected));
     }
+
+    [Test]
+    public void Exception() {
+        var exception = Assert.Throws<Exception>(() => cat.MeowError());
+
+        Assert.That(exception, Has.Message.EqualTo("Meow error!"));
+        Assert.That(exception, Has.InnerException.Message.EqualTo("Inner meow error!"));
+    }
 }

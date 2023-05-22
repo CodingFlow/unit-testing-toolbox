@@ -12,6 +12,10 @@ public class Cat : ICat
         return $"Meow{string.Join("", Enumerable.Repeat("!", volume))} {extraSound}".TrimEnd();
     }
 
+    public string MeowError() {
+        throw new Exception("Meow error!", new Exception("Inner meow error!"));
+    }
+
     public string MeowFromStats(CatStats stats) {
         return stats.Sound;
     }
