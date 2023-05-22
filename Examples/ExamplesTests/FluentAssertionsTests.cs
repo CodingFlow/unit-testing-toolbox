@@ -1,7 +1,6 @@
-using Examples;
 using FluentAssertions;
 
-namespace ExamplesTests;
+namespace Examples.Tests;
 
 public class FluentAssertionsTests
 {

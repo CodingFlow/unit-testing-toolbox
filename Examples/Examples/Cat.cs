@@ -1,6 +1,6 @@
 ﻿namespace Examples;
 
-public class Cat : ICat
+internal class Cat : ICat
 {
     private readonly ISoundScrambler soundScrambler;
 

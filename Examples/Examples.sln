@@ -1,15 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.6.33712.159
+VisualStudioVersion = 17.6.33717.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Examples.csproj", "{470812D5-09B6-4BF0-8492-A179E6009CA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples\Examples.csproj", "{470812D5-09B6-4BF0-8492-A179E6009CA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplesTests", "ExamplesTests\ExamplesTests.csproj", "{69E48514-FBB7-4895-B8A1-D0821AA7CCF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples.Tests", "ExamplesTests\Examples.Tests.csproj", "{69E48514-FBB7-4895-B8A1-D0821AA7CCF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{0233D085-3B8C-4605-8359-31DA252181F5}"
 	ProjectSection(SolutionItems) = preProject
 		..\.editorconfig = ..\.editorconfig
+		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
 Global

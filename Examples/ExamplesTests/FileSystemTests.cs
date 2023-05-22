@@ -1,8 +1,7 @@
-using Examples;
 using NSubstitute;
 using System.IO.Abstractions;
 
-namespace ExamplesTests;
+namespace Examples.Tests;
 
 public class FileSystemTests
 {

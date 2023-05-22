@@ -1,7 +1,6 @@
-using Examples;
 using NSubstitute;
 
-namespace ExamplesTests;
+namespace Examples.Tests;
 
 public class NSubstituteTests
 {

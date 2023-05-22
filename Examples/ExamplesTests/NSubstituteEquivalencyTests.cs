@@ -1,8 +1,7 @@
-using Examples;
 using NSubstitute;
 using NSubstitute.Equivalency;
 
-namespace ExamplesTests;
+namespace Examples.Tests;
 
 public class NSubstituteEquivalencyTests
 {

@@ -15,3 +15,19 @@ References to tools and patterns for easy and efficient unit testing in C#.
 ## To be used in unit production code:
 
 - [System.IO.Abstractions](https://github.com/TestableIO/System.IO.Abstractions) - Thin wrappers/proxies for [System.IO](https://learn.microsoft.com/en-us/dotnet/api/system.io?view=net-7.0).
+
+## Other
+
+- Set [InternalsVisibleTo](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.internalsvisibletoattribute?view=net-7.0) automatically for all projects via [Directory.Build.props](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022):
+
+```c#
+<Project>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>$(AssemblyName).Tests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+</Project>
+```
