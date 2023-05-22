@@ -9,7 +9,11 @@ public class Cat : ICat
     }
 
     public string Meow(int volume, string extraSound) {
-        return $"Meow{Enumerable.Repeat("!", volume)} {extraSound}";
+        return $"Meow{string.Join("", Enumerable.Repeat("!", volume))} {extraSound}".TrimEnd();
+    }
+
+    public string MeowFromStats(CatStats stats) {
+        return stats.Sound;
     }
 
     public string MeowScrambled() {
